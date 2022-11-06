@@ -47,58 +47,62 @@ nav {
 }
 
 #content{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: flex-start;
+  min-height: 50vh;
   padding: 5vh 2vw;
   background-color: white;
-}
 
-#left-article, #right-article {
+  header {
 
-  padding: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
-  h3{
-    font-size: 3vh;
-    color: #1A2D35;
-    font-weight: bold;
-  }
 
-  p{
-    padding: 2vh 0;
-    color: #38647A;
-  }
-}
+    h2 {
+      font-size: 4vh;
+      color: #1A2D35;
+      font-weight: bold;
+    }
 
-#left-article{
-  ul{
-    padding: 2vh 2vw;
-    list-style: square inside;
-  }
-
-  li {
-    color: #38647A;
+    p{
+      font-size: 2vh;
+      padding: 2vh 0;
+      color: #1A2D35;
+    }
   }
 }
 
-#examples {
-  background-color: #82A3B0;
-  padding: 2vh 2vw;
-  box-shadow: #1A2D33 0.5vh 0.5vh 1vh;
-}
+#content #vehicles{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5vh;
+  margin: 5vh 5vw;
+  justify-items: center;
 
-#right-article {
+  article {
+    background-color: #93B1BE;
+    padding: 1vh;
+    border: #38647A solid 1px;
 
-  img {
-    width: 90%;
-    height: 90%;
-    padding: 2vh 0;
-  }
+    figure {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-  a{
-    color: #38647A;
-    text-decoration: none;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      figcaption{
+        font-size: 2vh;
+        text-align: center;
+      }
+    }
+
   }
 }
 
