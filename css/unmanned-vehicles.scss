@@ -1,0 +1,126 @@
+body {
+  background: linear-gradient(0deg, #38647A, #ffffff);
+  min-height: 100vh;
+}
+
+header{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 1vh 0;
+
+  h1 {
+    font-size: 3rem;
+    color: #38647A;
+    text-shadow: 0 0 1rem #38647A;
+  }
+
+  h4 {
+    color: #38647A;
+    font-style: italic;
+  }
+}
+
+main {
+  padding: 0 10vw;
+}
+
+nav {
+  background-color: #1A2D33;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 1vh 1vw;
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+#content{
+  min-height: 50vh;
+  padding: 5vh 2vw;
+  background-color: white;
+
+  header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+    h2 {
+      font-size: 4vh;
+      color: #1A2D35;
+      font-weight: bold;
+    }
+
+    p{
+      font-size: 2vh;
+      padding: 2vh 0;
+      color: #1A2D35;
+    }
+  }
+}
+
+#content #vehicles{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5vh;
+  margin: 5vh 5vw;
+  justify-items: center;
+
+  article {
+    background-color: #93B1BE;
+    padding: 1vh;
+    border: #38647A solid 1px;
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      figcaption{
+        font-size: 2vh;
+        text-align: center;
+      }
+    }
+
+  }
+}
+
+footer {
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 2vh 0;
+
+  p, a {
+    font-size: 80%;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
