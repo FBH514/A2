@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Boulay-Handfield, Moubarak, Seeldrayers, Starostina">
+    <meta name="description" content="Mailing list join form">
+    <meta name="robots" content="index, follow">
+    <title>Insight</title>
+    <link rel="stylesheet" href="../css/reset2.css">
+    <link rel="stylesheet" href="../css/insight.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Advancing Technology</h1>
+            <h2>A Look into the Future 💫</h2>
+        </header>
+        <nav class="nav">
+            <ul class="links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="ai.html">AI</a></li>
+            <li><a href="deep-learning.html">Deep Learning</a></li>
+            <li><a href="nano.html">Nanotechnology</a></li>
+            <li><a href="unmanned-vehicles.html">Unmanned Vehicles</a></li>
+            <li><a href="insight.html">Insight</a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <h2 id="form_title">Complete the form below to join our email list and stay current with the latest trends in technology</h2>
+            <form class="form" id="signup" action="server" method="post">
+                <fieldset class="user_info">
+                    <legend>Your Information</legend>
+                    <ul>
+                        <li>
+                            <label for="first_name">First Name:</label>
+                            <input type="text" name="first_name" id="first_name" required>
+                        </li>
+                        <li>
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" name="last_name" id="last_name" required>
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required placeholder="email@host.com">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="interests">
+                    <legend>Fields of Interest</legend>
+                    <p>I am interested in learning more about: </p>
+                    <!-- inner fieldset legend or keep as p? -->
+                    <input type="checkbox" id="ai" name="ai">
+                    <label for="ai">Artificial Intelligence</label>
+                    <input type="checkbox" id="deep-learning" name="deep-learning">
+                    <label for="deep-learning">Deep Learning</label>
+                    <input type="checkbox" id="nano" name="nano">
+                    <label for="nano">Nanotechnology</label>
+                    <input type="checkbox" id="unmanned-vehicles" name="unmanned-vehicles">
+                    <label for="unmanned-vehicles">Unmanned Vehicles</label>
+                </fieldset>
+                <fieldset class="preferences">
+                    <legend>Mailing List Preferences</legend>
+                    <label for="frequency">How often would you like to receive e-mails from us?</label>
+                    <select name="frequency" id="frequency">
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="annually">Annually</option>
+                    </select>
+                    <label for="questions">Questions?</label>
+                    <textarea id="questions" name="questions" rows="5" cols="35">
+                    </textarea>
+                </fieldset>
+            </form>
+            <button class="button" type="submit" form="signup">Submit</button>
+        </main>
+        <footer class="footer">
+            <p>© Copyright 2022. All Rights Reserved</p>
+            <a href="mailto:contact@advatech.com">contact@advatech.com</a>
+        </footer>
+    </div>
+</body>
+</html>
