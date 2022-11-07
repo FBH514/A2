@@ -1,0 +1,106 @@
+body {
+  background: linear-gradient(0deg, #38647A, #ffffff);
+  min-height: 100vh;
+}
+
+header {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 1vh 0;
+}
+header h1 {
+  font-size: 3rem;
+  color: #38647A;
+  text-shadow: 0 0 1rem #38647A;
+}
+header h4 {
+  color: #38647A;
+  font-style: italic;
+}
+
+main {
+  padding: 0 10vw;
+}
+
+nav {
+  background-color: #1A2D33;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 1vh 1vw;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: flex-start;
+  padding: 5vh 2vw;
+  background-color: white;
+}
+
+#left-article, #right-article {
+  padding: 0 2vw;
+}
+#left-article h3, #right-article h3 {
+  font-size: 3vh;
+  color: #1A2D35;
+  font-weight: bold;
+}
+#left-article p, #right-article p {
+  padding: 2vh 0;
+  color: #38647A;
+}
+
+#left-article ul {
+  padding: 2vh 2vw;
+  list-style: square inside;
+}
+#left-article li {
+  color: #38647A;
+}
+
+#examples {
+  background-color: #82A3B0;
+  padding: 2vh 2vw;
+  box-shadow: #1A2D33 0.5vh 0.5vh 1vh;
+}
+
+#right-article img {
+  width: 90%;
+  height: 90%;
+  padding: 2vh 0;
+}
+#right-article a {
+  color: #38647A;
+  text-decoration: none;
+}
+
+footer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 2vh 0;
+}
+footer p, footer a {
+  font-size: 80%;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+footer a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=ai.scss.map */
