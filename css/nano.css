@@ -53,6 +53,7 @@ nav li {
     padding: 1vh 1vw;
   }
 nav a {
+    font-weight: bold;
     text-decoration: none;
     color: #ffffff;
   }
@@ -60,7 +61,7 @@ nav a {
 /* main section */
 main{
     grid-row: 3/span 1;
-    background-color: white;
+    background-color: rgb(227,238,242);
     color: #38647A;
     padding: 5vh 2vw;
     display: flex;
@@ -126,7 +127,7 @@ footer{
 }
 
 footer p, footer a {
- font-size: 80%;
+ font-size: .8rem;
  color: white;
  padding: 0;
  margin: 0;

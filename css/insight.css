@@ -48,11 +48,12 @@ nav ul {
     align-items: center;
     list-style: none;
   }
-nav ul li {
+nav li {
     display: inline-block;
     padding: 1vh 1vw;
   }
-nav ul li a {
+nav a {
+    font-weight: bold;
     text-decoration: none;
     color: #ffffff;
   }
@@ -60,10 +61,66 @@ nav ul li a {
 /* main section */
 main{
     grid-row: 3/span 1;
-    background-color: white;
-    color: #38647A;
-    padding: 5vh 2vw;
+    background-color: rgb(227,238,242);
+    color: black;
+    padding: 5rem 3rem;
 }
+
+main h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #1A2D35;
+}
+
+button, input, select, textarea{
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+form{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 2rem;
+}
+
+fieldset{
+  border: 1px black solid;
+  padding: 1rem;
+}
+
+legend{
+  font-size: 1.2rem;
+  font-weight:bold;
+  margin-left: 1rem;
+}
+
+.user_info label, .preferences label, .interests p{
+  display: block;
+  margin-top: 1rem;
+}
+
+.interests p{
+  font-size: 1.2rem;
+  color: #1A2D35;
+}
+.interests li{
+  margin-top: 2rem;
+}
+
+button{
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  background-color: rgb(168,202,214);
+  padding: 2rem;
+  border: none;
+  border-radius: .6rem;
+}
+
 
 /* footer */
 footer{
@@ -75,7 +132,7 @@ footer{
 }
 
 footer p, footer a {
- font-size: 80%;
+ font-size: .8rem;
  color: white;
  padding: 0;
  margin: 0;
