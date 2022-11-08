@@ -48,11 +48,11 @@ nav ul {
     align-items: center;
     list-style: none;
   }
-nav ul li {
+nav li {
     display: inline-block;
     padding: 1vh 1vw;
   }
-nav ul li a {
+nav a {
     text-decoration: none;
     color: #ffffff;
   }
@@ -63,7 +63,58 @@ main{
     background-color: white;
     color: #38647A;
     padding: 5vh 2vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
+
+table{
+    flex: 1;
+    margin: 2rem;
+}
+
+table, td, th{
+    border: 1px black solid;
+}
+
+table caption{
+    font-size: 1.5rem;
+    color: #1A2D35;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+thead{
+    background-color: #1A2D33;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    padding: 1rem;
+}
+
+td:not(a){
+    padding-right: 4rem;
+}
+
+tbody th{
+    text-align: left;
+}
+
+tbody tr:nth-of-type(2n), tfoot{
+    background-color: rgb(168,201,216);
+    color: white
+}
+
+
+
+table a{
+    color: #38647A;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 
 /* footer */
 footer{
