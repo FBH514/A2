@@ -6,4 +6,81 @@
 
 body, html{
     height: 100%;
+    background: linear-gradient(0deg, #38647A, #ffffff);
+    min-height: 100vh;
 }
+
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, max-content) 1fr max-content;
+    padding: 2vh 10vw;
+}
+
+/* header */
+header{
+    grid-row: 1/span 1;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 1vh 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #38647A;
+    text-shadow: 0 0 1rem #38647A;
+  }
+
+header h2 {
+    color: #38647A;
+    font-style: italic;
+  }
+
+ /* navigation bar */
+nav {
+    grid-row: 2/span 1;
+    background-color: #1A2D33;
+  }
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+nav ul li {
+    display: inline-block;
+    padding: 1vh 1vw;
+  }
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+/* main section */
+main{
+    grid-row: 3/span 1;
+    background-color: white;
+    color: #38647A;
+    padding: 5vh 2vw;
+}
+
+/* footer */
+footer{
+  grid-row: 4/span 1;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 2vh 0;
+}
+
+footer p, footer a {
+ font-size: 80%;
+ color: white;
+ padding: 0;
+ margin: 0;
+ }
+
+ footer a {
+    text-decoration: none;
+  }
