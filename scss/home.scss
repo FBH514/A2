@@ -1,3 +1,7 @@
+// mobile 768px
+// tablet 992px
+// desktop 1200px
+
 body {
   background: linear-gradient(0deg, #38647A, #ffffff);
   min-height: 100vh;
@@ -21,8 +25,67 @@ header{
   }
 }
 
+@media screen and (max-width: 768px) {
+
+  body {
+    background: #366278;
+  }
+
+  header {
+
+    color: white;
+
+    h1 {
+      font-size: 2rem;
+      color: white;
+    }
+
+    h4 {
+      font-size: 1rem;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  body {
+    background: #366278;
+  }
+
+  header {
+
+    color: white;
+
+    h1 {
+      font-size: 2rem;
+      color: white;
+    }
+
+    h4 {
+      font-size: 1rem;
+      color: white;
+    }
+  }
+}
+
+
 main {
   padding: 0 10vw;
+}
+
+@media screen and (max-width: 768px) {
+
+  main {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  main {
+    padding: 0;
+  }
 }
 
 nav {
@@ -41,6 +104,27 @@ nav {
       a {
         text-decoration: none;
         color: #ffffff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  nav{
+    height: 100%;
+
+    ul{
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+
+      li{
+        text-align: center;
+        border: white solid 1px;
+        width: 100%;
+        color: white;
+        padding: 2vh 0;
       }
     }
   }
@@ -67,6 +151,19 @@ nav {
     p{
       color: #38647A;
       padding: 2vh 1vw;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #lower {
+    article {
+      background-color: white;
+      p{
+        color: #38647A;
+        padding: 2vh 2vw;
+      }
     }
   }
 }
