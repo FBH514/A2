@@ -152,6 +152,16 @@ legend{
   margin-top: 4vh;
 }
 
+select{
+  margin-bottom: 2vh;
+}
+
+textarea{
+  width: 100%;
+  min-width: 10rem;
+  max-width: 70%;
+}
+
 button{
   display: block;
   margin: auto;
