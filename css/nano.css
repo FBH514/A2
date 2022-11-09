@@ -17,6 +17,15 @@ body, html{
     padding: 2vh 10vw;
 }
 
+@media screen and (max-width: 992px) {
+    body {
+      background: #366278;
+    }
+    .container {
+      padding: 0;
+    }
+  }
+
 /* header */
 header{
     grid-row: 1/span 1;
@@ -35,6 +44,19 @@ header h1 {
 header h2 {
     color: #38647A;
     font-style: italic;
+  }
+
+  @media screen and (max-width: 992px) {
+    header {
+      color: white;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: white;
+    }
+    header h2 {
+      color: white;
+    }
   }
 
  /* navigation bar */
@@ -58,6 +80,25 @@ nav a {
     color: #ffffff;
   }
 
+  @media screen and (max-width: 768px) {
+    nav {
+      height: 100%;
+    }
+    nav ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+    }
+    nav ul li {
+      text-align: center;
+      border: white solid 1px;
+      width: 100%;
+      color: white;
+      padding: 2vh 0;
+    }
+  }
+
 /* main section */
 main{
     grid-row: 3/span 1;
@@ -78,7 +119,7 @@ table, td, th{
     border: 1px black solid;
 }
 
-table caption{
+table caption, main h2{
     font-size: 1.5rem;
     color: #1A2D35;
     font-weight: bold;
@@ -108,12 +149,25 @@ tbody tr:nth-of-type(2n), tfoot{
     color: white
 }
 
-
-
 table a{
     color: #38647A;
     font-weight: bold;
     text-decoration: none;
+}
+
+article {
+    color: #1A2D35;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+      display: none;
+    }
+
+    article{
+        display:block;
+    }
 }
 
 
@@ -124,6 +178,7 @@ footer{
   justify-items: center;
   align-items: center;
   padding: 2vh 0;
+  background: #3a687f;
 }
 
 footer p, footer a {
@@ -135,4 +190,10 @@ footer p, footer a {
 
  footer a {
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 992px) {
+    footer{
+      background: #366278;
+    }
   }

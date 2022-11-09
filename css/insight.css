@@ -14,7 +14,16 @@ body, html{
     height: 100%;
     display: grid;
     grid-template-rows: repeat(2, max-content) 1fr max-content;
-    padding: 2vh 10vw;
+    padding: 2vh max(10px, 10vw);
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background: #366278;
+  }
+  .container {
+    padding: 0;
+  }
 }
 
 /* header */
@@ -35,6 +44,19 @@ header h1 {
 header h2 {
     color: #38647A;
     font-style: italic;
+  }
+
+  @media screen and (max-width: 992px) {
+    header {
+      color: white;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: white;
+    }
+    header h2 {
+      color: white;
+    }
   }
 
  /* navigation bar */
@@ -58,12 +80,31 @@ nav a {
     color: #ffffff;
   }
 
+  @media screen and (max-width: 768px) {
+    nav {
+      height: 100%;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-evenly;
+    }
+
+    nav ul li {
+      width: max(25%, content);
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+    }
+
+  }
+
 /* main section */
 main{
     grid-row: 3/span 1;
     background-color: rgb(227,238,242);
     color: black;
-    padding: 5rem 3rem;
+    padding: 5vh 3vw;
 }
 
 main h2{
@@ -83,13 +124,13 @@ button, input, select, textarea{
 
 form{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap: 2vw;
 }
 
 fieldset{
   border: 1px black solid;
-  padding: 1rem;
+  padding: 2vw;
 }
 
 legend{
@@ -108,7 +149,7 @@ legend{
   color: #1A2D35;
 }
 .interests li{
-  margin-top: 2rem;
+  margin-top: 4vh;
 }
 
 button{
@@ -116,9 +157,22 @@ button{
   margin: auto;
   margin-top: 3rem;
   background-color: rgb(168,202,214);
-  padding: 2rem;
+  padding: max(1rem, 1.8vw);
   border: none;
   border-radius: .6rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  main h2, legend, .interests p, label {
+    font-size: 1.2rem;
+  }
+
+  form{
+  grid-template-columns: minmax(180px,1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+  }
 }
 
 
@@ -129,6 +183,7 @@ footer{
   justify-items: center;
   align-items: center;
   padding: 2vh 0;
+  background: #3a687f;
 }
 
 footer p, footer a {
@@ -140,4 +195,10 @@ footer p, footer a {
 
  footer a {
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 992px) {
+    footer{
+      background: #366278;
+    }
   }
