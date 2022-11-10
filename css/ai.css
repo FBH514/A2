@@ -4,11 +4,28 @@
   box-sizing: border-box;
 }
 
-body, html {
+body, html{
   background: linear-gradient(0deg, #38647A, #ffffff);
   min-height: 100vh;
 }
 
+.container{
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, max-content) 1fr max-content;
+  padding: 2vh 10vw;
+}
+
+@media screen and (max-width: 991px) {
+  body, html {
+    background: #366278;
+  }
+  .container {
+    padding: 0;
+  }
+}
+
+/* header */
 header{
   grid-row: 1/span 1;
   display: grid;
@@ -23,7 +40,7 @@ header h1 {
   text-shadow: 0 0 1rem #38647A;
 }
 
-header h4 {
+header h2 {
   color: #38647A;
   font-style: italic;
 }
@@ -36,13 +53,60 @@ header h4 {
     font-size: 2rem;
     color: white;
   }
-  header h4 {
+  header h2 {
     color: white;
   }
 }
 
-main {
-  padding: 0 10vw;
+/* navigation bar */
+nav {
+  grid-row: 2/span 1;
+  background-color: #1A2D33;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  padding: 1vh 1vw;
+}
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    height: 100%;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  nav ul li {
+    text-align: center;
+    border: white solid 1px;
+    width: 100%;
+    color: white;
+    padding: 2vh 0;
+  }
+}
+
+/* main section */
+main{
+  grid-row: 3/span 1;
+  background-color: rgb(227,238,242);
+  color: #38647A;
+  padding: 5vh 2vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
