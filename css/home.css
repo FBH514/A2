@@ -1,44 +1,34 @@
-body {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
   background: linear-gradient(0deg, #38647A, #ffffff);
   min-height: 100vh;
 }
 
-header {
+header{
+  grid-row: 1/span 1;
   display: grid;
   justify-items: center;
   align-items: center;
   padding: 1vh 0;
 }
+
 header h1 {
   font-size: 3rem;
   color: #38647A;
   text-shadow: 0 0 1rem #38647A;
 }
+
 header h4 {
   color: #38647A;
   font-style: italic;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    background: #366278;
-  }
-  header {
-    color: white;
-  }
-  header h1 {
-    font-size: 2rem;
-    color: white;
-  }
-  header h4 {
-    font-size: 1rem;
-    color: white;
-  }
-}
 @media screen and (max-width: 992px) {
-  body {
-    background: #366278;
-  }
   header {
     color: white;
   }
@@ -47,10 +37,10 @@ header h4 {
     color: white;
   }
   header h4 {
-    font-size: 1rem;
     color: white;
   }
 }
+
 main {
   padding: 0 10vw;
 }
@@ -65,7 +55,9 @@ main {
     padding: 0;
   }
 }
+
 nav {
+  grid-row: 2/span 1;
   background-color: #1A2D33;
 }
 nav ul {
@@ -74,11 +66,12 @@ nav ul {
   align-items: center;
   list-style: none;
 }
-nav ul li {
+nav li {
   display: inline-block;
   padding: 1vh 1vw;
 }
-nav ul li a {
+nav a {
+  font-weight: bold;
   text-decoration: none;
   color: #ffffff;
 }
@@ -101,10 +94,12 @@ nav ul li a {
     padding: 2vh 0;
   }
 }
+
 #home-image {
   padding: 0;
   margin: 0;
 }
+
 #home-image img {
   width: 100%;
   height: 100%;
@@ -114,9 +109,11 @@ nav ul li a {
   padding: 0;
   margin: 0;
 }
+
 #lower article {
-  background-color: white;
+  background-color: rgb(227,238,242);
 }
+
 #lower article p {
   color: #38647A;
   padding: 2vh 1vw;
@@ -131,20 +128,32 @@ nav ul li a {
     padding: 2vh 2vw;
   }
 }
-footer {
+
+/* footer */
+footer{
+  grid-row: 4/span 1;
   display: grid;
   justify-items: center;
   align-items: center;
   padding: 2vh 0;
+  background: #3a687f;
 }
+
 footer p, footer a {
-  font-size: 80%;
+  font-size: .8rem;
   color: white;
   padding: 0;
   margin: 0;
 }
+
 footer a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  footer{
+    background: #366278;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

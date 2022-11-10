@@ -5,7 +5,6 @@
 }
 
 body, html{
-    height: 100%;
     background: linear-gradient(0deg, #38647A, #ffffff);
     min-height: 100vh;
 }
@@ -41,7 +40,7 @@ header h1 {
     text-shadow: 0 0 1rem #38647A;
   }
 
-header h2 {
+header h4 {
     color: #38647A;
     font-style: italic;
   }
@@ -54,10 +53,10 @@ header h2 {
       font-size: 2rem;
       color: white;
     }
-    header h2 {
+    header h4 {
       color: white;
     }
-  }
+}
 
  /* navigation bar */
 nav {
