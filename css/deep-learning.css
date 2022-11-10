@@ -28,7 +28,7 @@ header h4 {
   font-style: italic;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   header {
     color: white;
   }
@@ -45,12 +45,12 @@ main {
   padding: 0 10vw;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main {
     padding: 0;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   main {
     padding: 0;
   }
@@ -76,7 +76,7 @@ nav a {
   color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   nav {
     height: 100%;
   }
@@ -96,7 +96,7 @@ nav a {
 }
 
 #content {
-  min-height: 50vh;
+  min-height: 80vh;
   padding: 5vh 2vw;
   background-color: rgb(227,238,242);
 }
@@ -110,7 +110,7 @@ nav a {
   color: #38647A;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #content {
     display: grid;
     grid-template-columns: 1fr;
@@ -121,27 +121,23 @@ nav a {
   }
 }
 /* footer */
-footer{
-  grid-row: 4/span 1;
+footer {
   display: grid;
   justify-items: center;
   align-items: center;
   padding: 2vh 0;
-  background: #3a687f;
 }
-
 footer p, footer a {
-  font-size: .8rem;
+  font-size: 80%;
   color: white;
   padding: 0;
   margin: 0;
 }
-
 footer a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   footer{
     background: #366278;
   }

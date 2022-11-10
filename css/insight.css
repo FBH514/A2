@@ -79,7 +79,7 @@ nav a {
     color: #ffffff;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     nav {
       height: 100%;
     }
@@ -172,7 +172,7 @@ button{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main h2, legend, .interests p, label {
     font-size: 1.2rem;
   }
