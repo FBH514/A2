@@ -1,109 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html{
-    background: linear-gradient(0deg, #38647A, #ffffff);
-    min-height: 100vh;
-}
-
-.container{
-    height: 100%;
-    display: grid;
-    grid-template-rows: repeat(2, max-content) 1fr max-content;
-    padding: 2vh 10vw;
-}
-
-@media screen and (max-width: 991px) {
-    body, html {
-      background: #366278;
-    }
-    .container {
-      padding: 0;
-    }
-  }
-
-/* header */
-header{
-    grid-row: 1/span 1;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    padding: 1vh 0;
-}
-
-header h1 {
-    font-size: 3rem;
-    color: #38647A;
-    text-shadow: 0 0 1rem #38647A;
-  }
-
-header h2 {
-    color: #38647A;
-    font-style: italic;
-  }
-
-  @media screen and (max-width: 991px) {
-    header {
-      color: white;
-    }
-    header h1 {
-      font-size: 2rem;
-      color: white;
-    }
-    header h2 {
-      color: white;
-    }
-}
-
- /* navigation bar */
-nav {
-    grid-row: 2/span 1;
-    background-color: #1A2D33;
-  }
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-  }
-nav li {
-    display: inline-block;
-    padding: 1vh 1vw;
-  }
-nav a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffffff;
-  }
-
-  @media screen and (max-width: 767px) {
-    nav {
-      height: 100%;
-    }
-    nav ul {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-items: center;
-      align-items: center;
-    }
-    nav ul li {
-      text-align: center;
-      border: white solid 1px;
-      width: 100%;
-      color: white;
-      padding: 2vh 0;
-    }
-  }
-
 /* main section */
 main{
-    grid-row: 3/span 1;
-    background-color: rgb(227,238,242);
-    color: #38647A;
-    padding: 5vh 2vw;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -111,7 +7,6 @@ main{
 
 table{
     flex: 1;
-    margin: 2rem;
 }
 
 table, td, th{
@@ -166,33 +61,5 @@ article {
 
     article{
         display:block;
-    }
-}
-
-
-/* footer */
-footer{
-  grid-row: 4/span 1;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  padding: 2vh 0;
-  background: #3a687f;
-}
-
-footer p, footer a {
- font-size: .8rem;
- color: white;
- padding: 0;
- margin: 0;
- }
-
- footer a {
-    text-decoration: none;
-  }
-
-  @media screen and (max-width: 991px) {
-    footer{
-      background: #366278;
     }
 }
