@@ -1,17 +1,23 @@
 main{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
 }
-
-.content h3 {
+main header h3 {
   font-size: 1.5rem;
   color: #1A2D35;
   font-weight: bold;
 }
+
+main header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 .content p {
-  padding: 1.2rem 0;
+  padding: 0.5rem 0;
   color: #38647A;
 }
 
@@ -19,9 +25,9 @@ main{
   .content {
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
+    justify-items: flex-start;
     align-items: center;
-    padding: 1vh 5vw;
+    padding: 0 1vw;
     background-color: rgb(227,238,242);
   }
 }

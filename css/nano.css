@@ -30,6 +30,10 @@ td, th{
     padding: 1rem;
 }
 
+#table-row-1, #table-row-3, #table-row-5{
+    color: #1A2D35;
+}
+
 td:not(a){
     padding-right: 4rem;
 }

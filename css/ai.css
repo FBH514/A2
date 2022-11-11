@@ -17,13 +17,15 @@ main a {
 }
 
 #left-article, #right-article {
-  padding: 0 2vw;
+  padding: 2vh 2vw;
 }
+
 #left-article h3, #right-article h3 {
-  font-size: 3vh;
+  font-size: 1.2rem;
   color: #1A2D35;
   font-weight: bold;
 }
+
 #left-article p, #right-article p {
   padding: 2vh 0;
   color: #38647A;
@@ -43,7 +45,6 @@ main a {
     width: 100%;
   }
   #left-article h3, #right-article h3 {
-    font-size: 3vh;
     color: #1A2D35;
     font-weight: bold;
   }
@@ -58,16 +59,25 @@ main a {
 }
 #left-article ul {
   padding: 2vh 2vw;
-  list-style: square inside;
 }
 #left-article li {
+  list-style: none;
   color: #38647A;
   font-weight: bold;
 }
 
+#left-article li::before{
+    content: "\25A0";
+    font-size: 0.8em;
+    color: #1A2D35;
+    font-weight: bold;
+    padding-right: 1rem;
+    width: 1em;
+}
+
 #examples {
   background-color: #82A3B0;
-  padding: 2vh 2vw;
+  padding: 2vh 0 0 2vw;
   box-shadow: #1A2D33 0.5vh 0.5vh 1vh;
 }
 

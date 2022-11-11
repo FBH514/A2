@@ -20,14 +20,10 @@ article {
 }
 
 article p {
-  padding: 0 1vw;
-  padding-top: 1rem;
+  padding: 1rem 1vw 0 1vw;
 }
 
 @media screen and (max-width: 767px) {
-  article {
-    background-color: white;
-  }
   article p {
     padding: 2vh 2vw;
   }
