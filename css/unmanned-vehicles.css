@@ -68,6 +68,18 @@ figure figcaption {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  figure{
+    max-height: 26vh;
+  }
+  figure img {
+    width: 80%;
+    height: 90%;
+    padding: 2vh 1vw;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
   .vehicles {
     display: grid;
@@ -84,7 +96,7 @@ figure figcaption {
   }
 }
 
-@media screen and (min-width: 991px){
+@media screen and (min-width: 992px){
   #bus, #train{
     grid-column: 1/span 1;
     justify-self: start;
@@ -93,10 +105,9 @@ figure figcaption {
     grid-column: 2/span 1;
     justify-self: end;
   }
-  figure img {
-    width: 90%;
-    height: 85%;
-    padding: 1.5vh 1vw;
+
+  figure{
+    max-height: 28vh;
   }
 }
 
@@ -105,5 +116,10 @@ figure figcaption {
     width: clamp(150px, 400px, 800px);
     max-height: 28vh;
     height: auto;
+  }
+  figure img {
+    width: 90%;
+    height: 85%;
+    padding: 1.5vh 1vw;
   }
 }
