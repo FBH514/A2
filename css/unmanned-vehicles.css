@@ -39,7 +39,7 @@ main .header p {
 
 .vehicles {
   display: grid;
-  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
   grid-column-gap: 1vw;
   grid-row-gap: 1vh;
   justify-content: space-between;
@@ -93,11 +93,6 @@ figure figcaption {
     grid-column: 2/span 1;
     justify-self: end;
   }
-  figure{
-    width: clamp(150px, 400px, 800px);
-    max-height: 28vh;
-    height: auto;
-  }
   figure img {
     width: 90%;
     height: 85%;
@@ -105,5 +100,10 @@ figure figcaption {
   }
 }
 
-
-
+@media screen and (min-width: 1240px){
+  figure{
+    width: clamp(150px, 400px, 800px);
+    max-height: 28vh;
+    height: auto;
+  }
+}

@@ -68,13 +68,21 @@ button{
 
 
 @media screen and (max-width: 767px) {
+  main{
+    padding-top: 2vh;
+  }
+
   main h2, legend, .interests p, label {
     font-size: 1.2rem;
   }
 
   form{
   grid-template-columns: minmax(180px,1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-rows: repeat(3, max-content);
+  gap: 2vh;
+  }
+
+  fieldset{
+    padding: 0 3vw 2vh;
   }
 }

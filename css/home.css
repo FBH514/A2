@@ -27,6 +27,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .lower p {
-    padding: 2vh 2vw;
+    padding: 1vh 2vw;
   }
 }

@@ -9,8 +9,7 @@ main{
 
 @media screen and (max-width: 991px) {
   main {
-    padding: 0;
-    padding-top: 1rem;
+    padding-top: 2vh;
   }
 }
 
@@ -38,7 +37,7 @@ main{
     background-color: rgb(227,238,242);
   }
   #left-article, #right-article {
-    padding: 2vh 2vw;
+    padding: 1vh 2vw;
     width: 100%;
   }
   #left-article h3, #right-article h3 {
@@ -46,12 +45,11 @@ main{
     font-weight: bold;
   }
   #left-article p, #right-article p {
-    padding: 2vh 0;
-    color: #38647A;
+    padding-bottom: 1vh;
   }
   #left-article img, #right-article img {
     display: block;
-    margin: 0 auto;
+    margin: auto auto;
   }
 }
 #left-article ul {
