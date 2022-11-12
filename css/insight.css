@@ -3,7 +3,7 @@ main{
 }
 
 main h2{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 2rem;
   color: #1A2D35;
@@ -25,13 +25,12 @@ form{
 
 fieldset{
   border: 1px black solid;
-  padding: 2vw;
+  padding: 1vw;
 }
 
 legend{
   font-size: 1.2rem;
   font-weight:bold;
-  margin-left: 1rem;
 }
 
 .user_info label, .preferences label, .interests p{

@@ -12,10 +12,6 @@ main{
   }
 }
 
-main a {
-  font-weight: bold;
-}
-
 #left-article, #right-article {
   padding: 2vh 2vw;
 }
@@ -27,8 +23,7 @@ main a {
 }
 
 #left-article p, #right-article p {
-  padding: 2vh 0;
-  color: #38647A;
+  margin: 1rem 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -64,6 +59,7 @@ main a {
   list-style: none;
   color: #38647A;
   font-weight: bold;
+  margin-bottom: .5rem;
 }
 
 #left-article li::before{
@@ -78,15 +74,17 @@ main a {
 #examples {
   background-color: #82A3B0;
   padding: 2vh 0 0 2vw;
+  border: 1px #1A2D33 solid;
   box-shadow: #1A2D33 0.5vh 0.5vh 1vh;
 }
 
 #right-article img {
   width: 65%;
   border-radius: 2%;
-  margin: 2vh 0;
+  margin-top: 1rem;
 }
 #right-article a {
   color: #38647A;
   text-decoration: none;
+  font-weight: bold;
 }

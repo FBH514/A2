@@ -2,29 +2,36 @@
 main {
   display: grid;
   grid-template-rows: 1fr max-content;
+  padding: 0;
 }
 
 figure {
+  width: 100%;
   padding: 0;
   margin: 0;
 }
 
 figure img {
   width: 100%;
-  padding: 0;
   margin: 0;
 }
 
-article {
+.lower {
   background-color: rgb(227,238,242);
+  padding: 1.5rem;
+  padding-bottom: 0;
 }
 
-article p {
-  padding: 1rem 1vw 0 1vw;
+.lower p {
+  padding-bottom: 1.5rem;
+}
+
+.lower em{
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
-  article p {
+  .lower p {
     padding: 2vh 2vw;
   }
 }
