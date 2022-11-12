@@ -120,8 +120,14 @@ nav a:hover{
 main{
     grid-row: 3/span 1;
     background-color: rgb(227,238,242);
-    padding: 3rem 3vw;
+    padding: 5vh 3vw;
     color: #1A2D33;
+}
+
+@media screen and (min-width: 768px){
+  main{
+    max-height: 80vh;
+  }
 }
 
 /* footer */
@@ -130,7 +136,7 @@ footer{
     display: grid;
     justify-items: center;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2vh 0;
     letter-spacing: 1px;
   }
 

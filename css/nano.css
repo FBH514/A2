@@ -17,7 +17,7 @@ table caption, main h2{
     font-size: 1.5rem;
     color: #1A2D35;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 1vh;
 }
 
 thead{
@@ -27,7 +27,7 @@ thead{
 }
 
 td, th{
-    padding: 1rem;
+    padding: 2vh 1vw;
 }
 
 #table-row-1, #table-row-3, #table-row-5{
@@ -35,7 +35,7 @@ td, th{
 }
 
 td:not(a){
-    padding-right: 4rem;
+    padding-right: 4vw;
 }
 
 tbody th{
